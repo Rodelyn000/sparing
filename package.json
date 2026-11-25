@@ -1,0 +1,13 @@
+{
+  "name": "sparing",
+  "version": "1.0.0",
+  "description": "SpaRing spa website with a database-free Node backend",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=16"
+  },
+  "license": "MIT"
+}

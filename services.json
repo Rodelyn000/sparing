@@ -1,0 +1,74 @@
+[
+  {
+    "id": "swedish-massage",
+    "name": "Swedish Relaxation Massage",
+    "category": "Massage",
+    "price": 800,
+    "duration": 60,
+    "image": "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=900&q=70",
+    "description": "Gentle, flowing strokes that melt away tension and calm the mind.",
+    "details": "Our signature full-body massage uses light to medium pressure with warm, nourishing oil. Long, rhythmic strokes ease tight muscles, improve circulation and help your whole body settle into deep relaxation. Ideal for first-time guests and anyone who wants to simply unwind.",
+    "benefits": ["Relieves everyday muscle tension", "Improves blood circulation", "Reduces stress and helps you sleep better"],
+    "includes": ["Full-body massage with warm oil", "Welcome tea", "Private treatment room"]
+  },
+  {
+    "id": "hot-stone-therapy",
+    "name": "Hot Stone Therapy",
+    "category": "Massage",
+    "price": 1200,
+    "duration": 75,
+    "image": "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=900&q=70",
+    "description": "Smooth heated stones release deep tension and leave you feeling lighter.",
+    "details": "Heated basalt stones are placed along key points of the body and used by your therapist to massage deeper layers of muscle. The steady warmth softens knots, relaxes the nervous system and brings a long-lasting sense of calm.",
+    "benefits": ["Eases deep muscle stiffness", "Warms and soothes sore areas", "Promotes deep, lasting relaxation"],
+    "includes": ["Heated stone massage", "Back and shoulder focus", "Welcome tea"]
+  },
+  {
+    "id": "radiance-facial",
+    "name": "Radiance Facial",
+    "category": "Facial",
+    "price": 950,
+    "duration": 60,
+    "image": "https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=900&q=70",
+    "description": "A deep-cleansing facial that restores your skin's natural glow.",
+    "details": "Your therapist begins with a skin analysis, then cleanses, gently exfoliates, steams and applies a hydrating mask matched to your skin type. A relaxing face, neck and shoulder massage finishes the treatment, leaving skin fresh, soft and bright.",
+    "benefits": ["Deeply cleanses pores", "Hydrates and brightens skin", "Leaves a soft, healthy glow"],
+    "includes": ["Skin analysis", "Cleansing, exfoliation and mask", "Face, neck and shoulder massage"]
+  },
+  {
+    "id": "aromatherapy-ritual",
+    "name": "Aromatherapy Ritual",
+    "category": "Wellness",
+    "price": 1100,
+    "duration": 90,
+    "image": "https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?auto=format&fit=crop&w=900&q=70",
+    "description": "A full sensory journey with essential oils, candlelight and slow, mindful touch.",
+    "details": "Choose a blend of pure essential oils, such as lavender, ylang ylang or citrus, and enjoy a slow, 90-minute massage in a softly lit room. Breathing guidance and calming scents help quiet a busy mind and restore a sense of balance.",
+    "benefits": ["Calms the mind and eases anxiety", "Supports better sleep", "Lifts mood and restores energy"],
+    "includes": ["Essential oil blend of your choice", "Full-body massage", "Guided breathing and herbal tea"]
+  },
+  {
+    "id": "body-scrub-glow",
+    "name": "Body Scrub & Glow",
+    "category": "Body",
+    "price": 1000,
+    "duration": 60,
+    "image": "https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&w=900&q=70",
+    "description": "A natural exfoliating scrub followed by a moisturizing wrap for silky skin.",
+    "details": "Gentle sea salt and botanical oils buff away dead skin, then a rich body butter is massaged in to seal in moisture. Skin feels smoother, softer and visibly more radiant, perfect before a special occasion or simply as a treat.",
+    "benefits": ["Removes dull, dry skin", "Deeply moisturizes", "Leaves skin smooth and glowing"],
+    "includes": ["Full-body exfoliation", "Moisturizing body butter massage", "Warm towel finish"]
+  },
+  {
+    "id": "mani-pedi-set",
+    "name": "Manicure & Pedicure Set",
+    "category": "Nails",
+    "price": 700,
+    "duration": 75,
+    "image": "https://images.unsplash.com/photo-1519823551278-64ac92734fb1?auto=format&fit=crop&w=900&q=70",
+    "description": "Complete hand and foot care with a relaxing soak and polish of your choice.",
+    "details": "Enjoy a warm soak, nail shaping, cuticle care, gentle exfoliation and a short hand and foot massage, finished with the polish color of your choice. A tidy, polished look that keeps you feeling fresh.",
+    "benefits": ["Neat, healthy nails", "Softer hands and feet", "Relaxing hand and foot massage"],
+    "includes": ["Warm soak and nail shaping", "Cuticle care and exfoliation", "Polish of your choice"]
+  }
+]
