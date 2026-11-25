@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SpaRing | Relax. Renew. Restore.</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header" id="top">
+  <a href="#top" class="logo"><span class="logo-ring"></span>Spa<strong>Ring</strong></a>
+  <button class="menu-btn" id="menuBtn" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  <nav class="nav" id="nav">
+    <a href="#services" data-nav="services">Services</a>
+    <a href="#about" data-nav="about">About</a>
+    <a href="#gallery" data-nav="gallery">Gallery</a>
+    <a href="#booking" data-nav="booking">Book</a>
+    <a href="#contact" data-nav="contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero" data-views="home">
+  <div class="hero-content reveal">
+    <p class="eyebrow">Welcome to SpaRing</p>
+    <h1>Relax. Renew. Restore.</h1>
+    <p>Step into a quiet world of massage, facials and wellness rituals designed to bring your body and mind back into balance.</p>
+    <div class="hero-actions">
+      <a href="#booking" class="btn">Book a Treatment</a>
+      <a href="#services" class="btn btn-ghost">Explore Services</a>
+    </div>
+  </div>
+</section>
+
+<section class="stats" data-views="home">
+  <div class="stat"><span data-count="12">0</span><p>Expert Therapists</p></div>
+  <div class="stat"><span data-count="6">0</span><p>Signature Treatments</p></div>
+  <div class="stat"><span data-count="4800">0</span><p>Happy Guests</p></div>
+  <div class="stat"><span data-count="9">0</span><p>Years of Calm</p></div>
+</section>
+
+<section class="section" id="services" data-views="home booking">
+  <div class="section-head reveal">
+    <p class="eyebrow">What we offer</p>
+    <h2>Our Spa Services</h2>
+    <p class="hint">Select a service to see its full description.</p>
+  </div>
+  <div class="filters" id="filters"></div>
+  <div class="grid" id="serviceGrid"></div>
+  <p class="status" id="serviceStatus">Loading services...</p>
+</section>
+
+<section class="section" id="serviceDetail" data-views="detail" hidden>
+  <div class="detail" id="detailBox"></div>
+</section>
+
+<section class="section alt" id="about" data-views="home">
+  <div class="about">
+    <div class="about-img reveal">
+      <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1000&q=70" alt="Spa stones and candles" loading="lazy">
+    </div>
+    <div class="about-text reveal">
+      <p class="eyebrow">About SpaRing</p>
+      <h2>A calm place made for you</h2>
+      <p>SpaRing is a sanctuary where every detail, from the soft lighting to the natural oils, is chosen to help you slow down. Our therapists blend traditional techniques with modern care so every visit feels personal.</p>
+      <ul class="checks">
+        <li>Certified and caring therapists</li>
+        <li>Organic and skin-friendly products</li>
+        <li>Private, quiet treatment rooms</li>
+        <li>Easy online booking</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="gallery" data-views="home">
+  <div class="section-head reveal">
+    <p class="eyebrow">Inside the spa</p>
+    <h2>Gallery</h2>
+  </div>
+  <div class="gallery" id="gallery-grid">
+    <img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=800&q=70" alt="Massage treatment" loading="lazy">
+    <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=800&q=70" alt="Facial treatment" loading="lazy">
+    <img src="https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?auto=format&fit=crop&w=800&q=70" alt="Aromatherapy room" loading="lazy">
+    <img src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&w=800&q=70" alt="Body scrub" loading="lazy">
+    <img src="https://images.unsplash.com/photo-1519823551278-64ac92734fb1?auto=format&fit=crop&w=800&q=70" alt="Nail care" loading="lazy">
+    <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=70" alt="Hot stones" loading="lazy">
+  </div>
+</section>
+
+<section class="section alt" data-views="home">
+  <div class="section-head reveal">
+    <p class="eyebrow">Kind words</p>
+    <h2>What Guests Say</h2>
+  </div>
+  <div class="testimonials">
+    <blockquote class="reveal">The hot stone therapy was the most relaxed I have felt in years. I left feeling lighter.<cite>Maria L.</cite></blockquote>
+    <blockquote class="reveal">Beautiful space, gentle staff and a facial that made my skin glow for days.<cite>Joanna R.</cite></blockquote>
+    <blockquote class="reveal">Booking online took a minute and the aromatherapy ritual was worth every peso.<cite>Daniel C.</cite></blockquote>
+  </div>
+</section>
+
+<section class="section alt" id="booking" data-views="booking" hidden>
+  <div class="section-head reveal">
+    <p class="eyebrow">Reserve your time</p>
+    <h2>Book an Appointment</h2>
+  </div>
+  <div class="booking-wrap">
+    <form id="bookingForm" class="card form" novalidate>
+      <label>Full name<input type="text" name="name" required maxlength="80" autocomplete="name"></label>
+      <label>Email<input type="email" name="email" required maxlength="120" autocomplete="email"></label>
+      <label>Phone<input type="tel" name="phone" required maxlength="30" autocomplete="tel"></label>
+      <label>Service<select name="service" id="serviceSelect" required><option value="">Choose a service</option></select></label>
+      <div class="row">
+        <label>Date<input type="date" name="date" id="dateInput" required></label>
+        <label>Time<select name="time" id="timeSelect" required></select></label>
+      </div>
+      <label>Notes (optional)<textarea name="notes" rows="3" maxlength="300"></textarea></label>
+      <p class="summary" id="summary"></p>
+      <button type="submit" class="btn" id="bookBtn">Confirm Booking</button>
+      <p class="feedback" id="bookingFeedback" role="status"></p>
+    </form>
+
+    <div class="card lookup">
+      <h3>Manage my bookings</h3>
+      <p>Enter your email to see or cancel your appointments.</p>
+      <form id="lookupForm" class="inline-form">
+        <input type="email" id="lookupEmail" placeholder="you@example.com" required>
+        <button type="submit" class="btn btn-small">Find</button>
+      </form>
+      <ul class="bookings" id="bookingList"></ul>
+      <p class="feedback" id="lookupFeedback" role="status"></p>
+    </div>
+  </div>
+</section>
+
+<section class="section alt" id="contact" data-views="home">
+  <div class="section-head reveal">
+    <p class="eyebrow">Say hello</p>
+    <h2>Contact Us</h2>
+  </div>
+  <div class="booking-wrap">
+    <form id="contactForm" class="card form" novalidate>
+      <label>Name<input type="text" name="name" required maxlength="80"></label>
+      <label>Email<input type="email" name="email" required maxlength="120"></label>
+      <label>Message<textarea name="message" rows="4" required maxlength="1000"></textarea></label>
+      <button type="submit" class="btn">Send Message</button>
+      <p class="feedback" id="contactFeedback" role="status"></p>
+    </form>
+    <div class="card info">
+      <h3>Visit SpaRing</h3>
+      <p>Luna st. Lapaz, Iloilo City</p>
+      <p>Open daily 9:00 AM to 8:00 PM</p>
+      <p>hellosparing@gmail.com</p>
+      <p>+63 912 945 3214</p>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <a href="#top" class="logo"><span class="logo-ring"></span>Spa<strong>Ring</strong></a>
+  <p>Relax. Renew. Restore.</p>
+  <p class="copy">&copy; <span id="year"></span> SpaRing. All rights reserved.</p>
+</footer>
+
+<div class="lightbox" id="lightbox"><img alt=""></div>
+<script src="script.js"></script>
+</body>
+</html>
